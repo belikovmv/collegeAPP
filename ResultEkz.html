@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script > 
+        window.onload = function(){
+          // текущая дата
+          var now = new Date();       
+          // дата предстоящего события (год, месяц, число)
+          var eventDate = new Date(2013,7,31);
+          var span = document.getElementById('timetoevent');
+          var text = "До окончания распродажи осталось ";
+          var div = document.getElementById('event-mess');
+          // если событие еще не наступило
+          if(now < eventDate){
+            div.firstChild.nodeValue = text;
+              window.setInterval(function(){ 
+                 span.innerHTML = timeToEvent(eventDate); 
+               },1000);           
+           }               
+        }
+       </script>
+    <meta charset="utf-8" />
+    <!-- Set the viewport width to device width for mobile -->
+    <meta name="viewport" content="width=device-width" />
+
+    <title>Результаты экзаменов</title>
+
+    <!-- Included CSS Files (Compressed) -->
+    <link rel="stylesheet" type="text/css" href="slick-1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick-1.8.1/slick/slick-theme.css">
+    <link rel="stylesheet" href="css/foundation.min.css">
+    <link rel="stylesheet" href="css/photo.css">
+    <link rel="stylesheet" type="text/css" href="fancybox-master/dist/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link href="timeTo.css" type="text/css" rel="stylesheet"/>
+  
+    <link rel="apple-touch-icon" sizes="57x57" href="icons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="icons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="icons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="icons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="icons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="icons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="icons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="icons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="icons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="icons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
+    <link rel="manifest" href="manifest.json">
+    <meta name="msapplication-TileColor" content="#E6E6FA">
+    <meta name="msapplication-TileImage" content="icons/ms-icon-144x144.png">
+    <meta name="theme-color" content="#E6E6FA">
+
+    <!-- IE Fix for HTML5 Tags -->
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+</head>
+<style>
+
+</style>
+<body>
+
+    <div id="info">
+        <img id="info__close"  align="right" src="img/close.png" height="50" width="50" alt="">
+        <img id="info__logo" src="img/8mFsgE8UfB0.jpg"  height="50px" width="60px" alt="">
+
+    <p><strong>Отделение приемной комиссии ТКМП в г. Таганрог находится по адресу:</strong> г. Таганрог, пер. Некрасовский, 44, корпус "Д", кабинет Д113;.</p>
+    <p><strong>Телефон</strong> +7 (8634) 39-34-22 (горячая линия), 361-613;</p>
+            <p><strong>e-mail:</strong> priem-tgn@sfedu.ru;.</p>
+            <p><strong>Сайт приемной комисси</strong> <a href=https://sfedu.ru/www/stat_pages22.show?p=ABT/main/M>Основной сайт</a></p>
+            <h4>График работы приемной комиссии:</h4>
+            <p><strong>Понедельник - Пятница</strong> с 08:30 до 17:00</p>
+            <p><strong>Перерыв</strong>  с 12:30 до 13:00.</p>
+            <p><strong>Выходные дни:</strong>  суббота, воскресенье</p>
+    </div> 
+<div id="regist">
+    <img id="regist__close"  align="right" src="img/close.png" height="50" width="50" alt="">
+    <img id="register__logo" src="img/8mFsgE8UfB0.jpg"  height="50px" width="60px" alt="">
+    <div class="register__block">
+
+        <div class="register__shift">
+            <a class="register__link" href="education.html">Авторизация</a>
+        </div>
+        <div class="register__shift">
+            <a class="register__link" href="register.html">Регистрация</a>
+        </div>
+
+    </div>
+</div>
+
+<header class="header">
+    <section class="top">
+            <div class="logo"> <a href="index.html"><img src="img/8mFsgE8UfB0.jpg" height="11
+                0px" width="125px" alt=""> </a></div>
+            
+      <div class="autorization">
+          <div id=contant class="autorization__info">Контактная информация</div>
+          <div id=auto__wrap class="autorization__button">Авторизация</div>
+      </div>
+                
+          
+
+</section>
+       
+    <section class="bottom">
+        <div class="mobile-navigation">
+            <input type="checkbox" name="" id="choice">
+            <label class="choice-container" for="choice">
+                <span class="button-choice_1"></span>
+                <span class="button-choice_2"></span>
+                <span class="button-choice_3"></span>
+            </label>
+         
+            <ul class="hidden-menu">
+                <div class="hidden-menu__title"> </div>
+
+                
+                <li class="menu__item"><a class="menu__link" href="admission.html">
+                    Поступление</a></li>
+
+            
+
+            <li class="menu__item"><a class="menu__link" href="
+intelligence.html">
+                    Информация о обучении</a></li>
+
+            
+
+            <li class="menu__item"><a class="menu__link" href="life.html">
+                    Жизнь Колледжа</a></li>
+
+            
+
+            <li class="menu__item"><a class="menu__link" href="result">
+                    Экзамен и списки</a></li>
+
+            
+
+            <li class="menu__item"><a class="menu__link" href="old">
+                    Статистика прошлых лет</a></li>
+
+            
+
+            <li class="menu__item"><a class="menu__link" href="calc">
+                    Калькулятор ОГЭ</a></li>
+
+                    <li class="menu__item"><a class="menu__link" href="post">
+                        Задать вопрос</a></li>
+
+              
+
+            </ul>
+        </div>
+                    <div class="bottom__menu">
+                           <a class="bottom__link" href="admission.html">
+                                Поступление</a>
+                                <a class="bottom__link" href="
+intelligence.html">
+                                    Информация о обучении</a>
+                                    <a class="bottom__link" href="life.html">
+                                        Жизнь Колледжа</a>
+                                        <a class="bottom__link" href="result.html">
+                                            Экзамены и списки</a>
+                                            <a class="bottom__link" href="old.html">
+                                                Статиcтика прошлых лет</a>
+                                               <a class="bottom__link" href="calc.html">
+                                                    Калькулятор ОГЭ</a>
+                                                   <a class="bottom__link" href="post.html">
+                                                        Задать вопрос</a>                                       
+                    </div>
+    </section>
+</header>
+
+<div class="present-location">
+    <ul class="present-location__list">
+        <li class="present-location__item"><a class="present-location__link_path" href="index.html">Главная страница</a></li>
+        <li class="present-location__item">/</li>
+        <li class="present-location__item"><a class="present-location__link_path" href="result.html">Экзамены и списки</a></li>
+        <li class="present-location__item">/</li>
+        <li class="present-location__item"><a class="present-location__link_end" href="">Результаты экзаменов</a></li>
+    
+    </ul>
+</div>
+
+
+<section class="section">
+    <style>
+       
+        .section{
+
+            width: 100%;
+            padding: 10px 10px 10px 10px;
+         
+        }
+        .h3{
+            margin-top: 20px;
+            font-size: 24px;
+             height: 20px;
+            margin-bottom: 25px;
+            word-spacing: 2px;
+        }
+        .timetable{
+            margin-top: 10px;
+            border-left: 3px solid black;
+        
+          
+            padding-left: 10px;
+            margin-bottom: 10px;
+        }
+        .timetable2{
+            position: relative;
+            margin-top: 50px;
+            border-left: 3px solid black;
+            
+
+
+            
+            padding-left: 10px;
+            margin-bottom: 10px;
+        }
+        .timetable3{
+            position: relative;
+            margin-top: 50px;
+            border-left: 3px solid black;
+            height: 210px;
+           
+            padding-left: 10px;
+            margin-bottom: 10px;
+        }
+        p {
+            font-size: 19px;
+            word-spacing: 6px;
+        }
+        .text{
+            margin-bottom: 10px;
+            margin-top: 10px;
+            font-size: 15px;
+            word-spacing: 4px;
+        }
+        .bold{
+            font-weight: bold;
+
+        }
+        .item {
+            margin-bottom: 20px;
+        }
+        .star{
+            margin: 0 auto;
+            width: 30px;
+            font-size: 30px;
+            margin-bottom: 30px;
+        }
+        .text-center{
+            text-align: center;
+            color:grey;
+        }
+        #content{
+            width: 95%;
+            margin:auto;
+            min-height: 250px;
+           
+        }
+        li{
+            font-size: 20px;
+            
+        }
+a{
+    color: rgb(37, 49, 218)
+}
+h1{
+    font-size: 27px !important;
+}
+#timer{
+    font-size: 22px;
+}
+    </style>
+    <div id=content>
+    <h1>Результаты экзаменов:</h1>
+ 
+    
+    <h4><a name="one"></a>2019 год</h4>
+  
+    <p class="text">Результаты экзаменов поступающих в Таганрогский колледж морского приборостроения в 2019 году появятся после проведения вступительных испытаний и проверки работ в июле-сентябре 2019 года.:</p>
+    <p class="item">До первого экзамена:</p>
+  <div id="timer"></div>
+</div>
+</section>
+
+
+
+<footer class="footer">
+  
+</footer>
+
+
+<!-- Included JS Files (Compressed) -->
+<script src="js/foundation.min.js" type="text/javascript">
+</script>
+<!-- Initialize JS Plugins -->
+<script src="js/app.js" type="text/javascript">
+</script>
+ <script src="js/reg.js"></script>
+<!-- Masonry for galleries -->
+<script src="js/masonry.js" type="text/javascript">
+</script>
+<script>
+function timer() {
+    var nowDate = new Date();
+    var achiveDate = new Date(2019,7,18,1,0,0); //Задаем дату, к которой будет осуществляться обратный отсчет
+    var result = (achiveDate - nowDate)+1000;
+    if (result < 0) {
+        var elmnt = document.getElementById('timer');
+        elmnt.innerHTML = ' - : - - : - - : - - ';
+        return undefined;
+    }
+    var seconds = Math.floor((result/1000)%60);
+    var minutes = Math.floor((result/1000/60)%60);
+    var hours = Math.floor((result/1000/60/60)%24);
+    var days = Math.floor(result/1000/60/60/24);
+    if (seconds < 10) seconds = '0' + seconds;
+    if (minutes < 10) minutes = '0' + minutes;
+    if (hours < 10) hours = '0' + hours;
+    var elmnt = document.getElementById('timer');
+    elmnt.innerHTML = days + ':' + hours + ':' + minutes + ':' + seconds;
+    setTimeout(timer, 1000);
+}
+window.onload = function() {
+    timer();
+}
+</script>
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="slick-1.8.1/slick/slick.min.js"></script>
+<script src="js/reg.js"></script>
+<script src="fancybox-master/dist/jquery.fancybox.min.js"></script>
+
+<script src="jquery.time-to.js"></script>
+
+<!-- END Masonry -->
+<script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script language="JavaScript" type="text/javascript" src="js/jq.js"></script>
+ 
+    <link rel="stylesheet" href="css/education.css">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+    <meta charset="utf-8" />
+
+    <meta name="viewport" content="width=device-width" />
+  
+    <title>Theme by CssTemplateHeaven</title>
+    
+    <!-- Included CSS Files (Compressed) -->
+    <link rel="stylesheet" href="css/foundation.min.css">
+    <link rel="stylesheet" href="css/app.css">
+  
+    <link rel="apple-touch-icon" sizes="57x57" href="icons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="icons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="icons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="icons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="icons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="icons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="icons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="icons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="icons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="icons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
+    <link rel="manifest" href="manifest.json">
+    <meta name="msapplication-TileColor" content="#E6E6FA">
+    <meta name="msapplication-TileImage" content="icons/ms-icon-144x144.png">
+    <meta name="theme-color" content="#E6E6FA">
+</head>
+
+<body >
+
+<div id="regist">
+    <img id="regist__close"  align="right" src="img/close.png" height="50" width="50" alt="">
+    <img id="register__logo" src="img/8mFsgE8UfB0.jpg"  height="50px" width="60px" alt="">
+<div class="register__block"> 
+   
+    <div class="register__shift">
+    <a class="register__link" href="education.html">Авторизация</a>
+ </div>        
+ <div class="register__shift">
+    <a class="register__link" href="education.html">Регистрация</a>
+ </div>    
+
+</div>  
+</div>    
+</div>
+<style>
+    h3{
+        margin-left: 20px;
+    }
+</style>
+    <div id="container">
+
+            <h1><a href=index.html>Вернуться на главную</a></h1>
+
+
+        <div class="present-location">
+            <ul class="present-location__list">
+                <li class="present-location__item"><a class="present-location__link_path" href="index.html">Главная страница</a></li>
+                <li class="present-location__item">/</li>
+                <li class="present-location__item"><a class="present-location__link_end" href="">Задать вопрос</a></li>
+            </ul>
+          
+        </div>
+        <h3>В этой форме, вы можете изложить свои вопросы по поводу правил подачи и приема документов, необходимых баллов, дополнительных бонусов, для интересующего вас напралвения</h3>
+        <p class="help">Для того, чтобы отправлять сообщения, вы должны <a href="register.html">авторизоваться</a></p>
+       
+        <div id="login">
+            <h1 class="login__title">Вопросы по поводу приемной комисии</h1>
+            <img id="register__logo" src="img/8mFsgE8UfB0.jpg"  height="100px" width="100px" alt="">
+            <fieldset>
+                <form action="javascript:void(0);" method="get">
+                    <div  class="login__text">Тема</div>
+                    <select class="form-control" id="select">
+                        <option disabled>Ваша Тема</option>    
+                            <option value="problem-online">Проблемы с подачей документов онлайн</option>
+                            <option value="problem-doc">Трудности оформлением аттестата</option>
+                            <option value="problem-education">Вопросы по направлениям, специальностям</option>
+                            <option selected value="other">Другое (Укажите тему в форме ниже</option>
+                            </select>
+                          <div class="login__text"></div>  
+                    <input type="text"  value="Ваша тема" onBlur="if(this.value=='')this.value=''" onFocus="if(this.value=='Логин')this.value='' ">
+                    <div class="login__text">Специальность</div>
+                    <select class="form-control" id="select">
+                        <option disabled>Специальность на которую вы подали документы</option>    
+                            <option value="iivt">Компютерные системы и комплексы</option>
+                            <option value="isit">Компютерные сети</option>
+                            <option value="pi">Радоаппаратостроение</option>
+                            <option selected value="other">Еще не подавал документы</option>
+                            </select>
+                            <p>При необходимости вы можете прикрепить в вашему сообщению необходимые файлы</p> 
+                            <input type="file" multiple name="f">
+                            <div class="login__text">Текст сообщения</div> 
+                            <textarea id="post-text"   placeholder="Ваше сообщение..." onBlur="if(this.value=='')this.value=''" onFocus="if(this.value=='Логин')this.value='' "></textarea>
+                    <button type="submit" value="ВОЙТИ">Отправить</button>
+                    <div 
+                        <p><span class="login__info">?</span><a href="#">Проблема с отправкой?</a></p>
+                </div>
+                </form>
+            </fieldset>
+    
+        </div>
+      
+        <footer class="footer">
+         
+    </footer>
+    </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <script src="app.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>
