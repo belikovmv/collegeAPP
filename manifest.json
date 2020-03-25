@@ -1,11 +1,11 @@
 {
-    "name": "SFEDU directory",
-    "short_name": "SFEDU",
+  "name": "ТКМП Справочник",
+  "short_name": "ТКМП",
     "description": "Web Community Leaders landing page",
     "lang": "ru-RU",
     "start_url": "index.html",
     "display": "standalone",
-    "theme_color": "#f7f8f1",
+    "theme_color": "#5a78db",
     "background_color":"#f7f8f1",
     "icons": [
         {
